@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #efede6;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    flex-grow: 1; /* Mantém o conteúdo principal flexível */
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+fieldset {
+    border: none;
+    width: 100%;
+}
+
+/* Header */
+header {
+    background-color: #efe8c8;
+    padding: 10px 20px;
+}
+
+header .navbar-nav {
+    gap: 15px;
+}
+
+/* Imagens do header */
+header a img {
+    height: 50px; /* Mantém o tamanho correto do header */
+}
+
+/* Footer */
+footer {
+    background-color: #ff4f88;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Imagens do footer */
+footer a img {
+    height: 20px; /* Mantém o tamanho correto do footer */
+}
+
+/* Botões */
+button {
+    background-color: #ff4f88;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Imagens fluidas (genéricas) */
+.img-fluid {
+    height: min-content;
+    width: 150px;
+    max-width: unset; /* Impede que Bootstrap sobrescreva o tamanho */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,22 @@
+:root {
+    --bs-primary: #ff4f88; /* Change primary color */
+    --bs-secondary: #000000; /* Change secondary color */
+    --bs-success: #28a745; /* Change success color */
+    --bs-danger: #dc3545; /* Change danger color */
+    --bs-light: #efe8c8;
+}
+
+/* Optional: Ensure buttons and text actually use these variables */
+.btn-primary {
+    background-color: var(--bs-primary) ;
+    border-color: var(--bs-primary) ;
+}
+
+.btn-primary:hover {
+    background-color: #d2285e ;
+}
+
+.btn-secondary {
+    background-color: var(--bs-secondary) ;
+    border-color: var(--bs-secondary) ;
+}
